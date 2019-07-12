@@ -9,67 +9,133 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="Style.css">
+    <style>
+        .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+            margin-bottom: 10%;
 
+        }
+        img {
+            height: 250px;
+            object-fit:fill;  
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+        }
+
+        .caption {
+            position: absolute;
+            top: 65%;
+            left: 0;
+            width: 100%;
+            color: white;
+            background-color: aqua;
+        }
+
+        .thumbnail {
+            position: relative;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark pl-5">
-        <a id="topbar" class="navbar-brand" href="#">Alan Kuzmanovic</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse w-75 order-3 dual-collapse2">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
+    <nav id="t" class="navbar navbar-expand-lg navbar-dark bg-dark pl-5">
+        <div class="container">
+            <a id="topbar" class="navbar-brand" href="#">Alan Kuzmanovic</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse w-75 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+
     </nav>
-    <div class="row">
-        <div class="col-2"></div>
-        <div class="col-8">
+    <div class="container">
+        <div class="col-12">
             <div class="card mt-5">
                 <div class="card-body">
                     <h1 id="About">Portfolio</h1>
                     <hr>
-                    
+
                     <div class="row">
-                    <div id="Pimages" class="col-6">
-                    <img src="https://via.placeholder.com/300x300" alt="Portfolio image 1" style="width:300px" style="height: 300px;"></div>
-                    <div id="Pimages" class="col-6">
-                    <img src="https://via.placeholder.com/300x300" alt="Portfolio image 1" style="width:300px" style="height: 300px;"></div>
+
+                        <div class="column">
+                            <div class="thumbnail text-center">
+                                <img class="img-responsive" src="assets/images/Pimage1.jpg" alt="Picture" style="width:100%">
+                                <div class="caption">
+                                    <p>Hangman</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="thumbnail text-center">
+                                <img class="img-responsive" src="assets/images/Pimage2.jpg" alt="Picture" style="width:100%">
+                                <div class="caption">
+                                    <p>RPG Game</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
-                    <div id="Pimages" class="col-6">
-                    <img src="https://via.placeholder.com/300x300" alt="Portfolio image 1" style="width:300px" style="height: 300px;"></div>
-                    <div id="Pimages" class="col-6">
-                    <img src="https://via.placeholder.com/300x300" alt="Portfolio image 1" style="width:300px" style="height: 300px;"></div>
+                        <div class="column">
+                            <div class="thumbnail text-center">
+                                <img class="img-responsive" src="assets/images/Pimage3.jpg" alt="Picture" style="width:100%">
+                                <div class="caption">
+                                    <p>Trivia Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="thumbnail text-center">
+                                <img class="img-responsive" src="assets/images/Pimage4.jpg" alt="Picture" style="width:100%">
+                                <div class="caption">
+                                    <p>Rutgers Info Widget</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
-                    <div id="Pimages" class="col-6">
-                    <img src="https://via.placeholder.com/300x300" alt="Portfolio image 1" style="width:300px" style="height: 300px;"></div>
-                    <div id="Pimages" class="col-6">
-                    <img src="https://via.placeholder.com/300x300" alt="Portfolio image 1" style="width:300px" style="height: 300px;"></div>
+                        <div class="column">
+                            <div class="thumbnail text-center">
+                                <img class="img-responsive" src="assets/images/Pimage5.jpg" alt="Picture" style="width:100%">
+                                <div class="caption">
+                                    <p>Rock Paper Scissors</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="column">
+                        </div>
                     </div>
-  
-                    
                 </div>
-                <div class="col-2"></div>
             </div>
         </div>
     </div>
     <nav id="botbarborder" class="navbar fixed-bottom navbar-dark bg-dark">
         <a id="botbar" class="navbar-brand" href="#">Copyright ©</a>
     </nav>
-
 </body>
-
 </html>
